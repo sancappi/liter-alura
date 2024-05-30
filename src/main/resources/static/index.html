@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>LiterAlura</title>
+        <script src="liter.js" ></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <p>LiterAlura</p>
+            </div>
+
+            <div>
+                <input type="checkbox" id="menu" class="menu_check">
+                <label for="menu" class="menu-icon">&#9776;</label>
+                
+                <nav class="menu_container">
+                    <ul>
+                        <li><a href="#section_one">Buscar livro por título</a></li>
+                        <li><a href="#section_two">Listar livros registrados</a></li>
+                        <li><a href="#section_three">Listar autores</a></li>
+                        <li><a href="#section_four">Listar autores por ano</a></li>
+                        <li><a href="#section_five">Listar livros por idiomas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="section_one">
+                <h1>Buscar livro por título</h1>
+                <div class="buscar">
+                    <p class="p_color">Digite o nome do livro</p>
+                    <input type="text" id="input_livro_titulo">
+                    <label for="input_livro_titulo"></label>
+                    <button id="button_livro_titulo">Buscar</button>
+                    <div id="retorno"></div>
+                </div>
+                <div id="buscar_na_API" class="retorno_api">
+                    <ul>
+                        <li id="titulo">Título: </li>
+                        <li id="autores">Autores: </li>
+                        <li id="idiomas">Idiomas: </li>
+                        <li id="downloads">Número de downloads: </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="section_two">
+                <h1>Listar livros registrados</h1>
+                <div class="buscar_livro">
+                    <p class="p_color">Clique abaixo para retornar todos os livros registrados </p>
+                    <button id="buscar_todos_livros">Retornar</button>
+                </div>
+                <div id="livros_todos" class="listar_conteudo"></div>
+            </section>
+
+            <section id="section_three">
+                <h1>Listar autores cadastrados</h1>
+                <div class="buscar_autor">
+                    <p class="p_color">Clique abaixo para retornar todos os autores cadastrados </p>
+                    <button id="buscar_todos_autores">Retornar</button>
+                </div>
+                <div id="autores_todos" class="listar_conteudo"></div>
+            </section>
+
+            <section id="section_four">
+                <h1>Listar autores por ano </h1>
+                <div class="buscar">
+                    <p class="p_color">Digite o ano</p>
+                    <input id="input_autor_ano">
+                    <label for="input_autor_ano"></label>
+                    <button id="button_autor_ano">Buscar</button>
+                </div>
+                <div id="autores_ano" class="listar_conteudo"></div>
+            </section>
+
+            <section id="section_five">
+                <h1>Listar livros por idiomas </h1>
+                <div class="buscar_livro_idioma">
+                    <button type="radio" name="idioma" value="pt">PT</button>
+                    <button type="radio" name="idioma" value="en">EN</button>
+                    <button type="radio" name="idioma" value="fr">FR</button>
+                    <button type="radio" name="idioma" value="es">ES</button>
+                </div>
+                <div id="livros" class="listar_conteudo"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <p>Entre em contato pelo e-mail: sempresan@outlook.com</p>
+        </footer>
+    </body>
+</html>

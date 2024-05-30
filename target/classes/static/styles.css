@@ -1,0 +1,244 @@
+body{
+    background-color: #040428;
+    margin:0;
+    padding: 0;
+    font: 16px Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #4B0082;
+    text-align: center;
+    height: 10vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-weight:bold;
+}
+
+.p_color{
+    color: #4B0082;
+}
+
+li{
+    color: #4B0082;
+    list-style-type: none;
+}
+
+.logo p{
+    text-shadow: 10px 10px 6px white;
+}
+
+nav ul{
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+a {
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+    font-size: 1em;
+    word-break: break-all;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+}
+
+.menu_check {
+    display: none;
+}
+
+main{
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    padding-top: 4em;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height: 400px;
+    background-color:#FFF5EE;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+button {
+     background-color: #4B0082;
+     color:white;
+     margin-bottom: 10px;
+     cursor:pointer;
+     padding: 8px;
+}
+
+h1{
+    font-size: 1.2em;
+    background-color: #4B0082;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: #4B0082;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
+
+.buscar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscar input{
+    background-color: #808080;
+    border-color: 1px solid black;
+    border-radius: 4px;
+    padding: 12px;
+    color: white;
+    margin-bottom: 10px;
+    font-size:1.2em;
+}
+
+.retorno_api{
+    margin-top: 20px;
+    position:relative;
+    left: -120px;
+}
+
+.retorno_api ul{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.buscar_livro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listar_conteudo{
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    background-color: #B0C4DE;
+}
+
+.listar_conteudo div{
+    color: white;
+    position:relative;
+    margin-left: 10px;
+}
+
+.listar_conteudo div h3{
+    color: #4B0082;
+}
+
+.listar_conteudo li{
+    margin-left: 10px;
+}
+
+.buscar_autor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1000px){
+    a {
+        padding: 0.2em;
+        color: #4B0082;
+        font-size: 0.9em;
+    }
+
+    .menu_container{
+        z-index: 1;
+        display: none;
+        background-color: #B0C4DE;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 3em;
+        position: relative;
+        right: 12px;
+    }
+
+    .menu_check:checked + .menu-icon + .menu_container {
+        display: block;
+    }
+
+    .menu_container ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 2px;
+        margin:0;
+        padding: 0;
+        border-radius: 18px;
+    }
+
+    .menu_container ul li {
+        position: relative;
+        margin:6px 0px 6px 0px;
+        width: 100%;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+
+    .menu_check:checked + .menu-icon + .menu_container ul {
+        display: block;
+    }
+}
