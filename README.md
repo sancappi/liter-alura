@@ -11,8 +11,9 @@
 
 
 
-|![Demonstração do retorno de livros por escolha de idioma e autores por ano](https://github.com/sancappi/liter-alura/assets/149303714/e68d4adb-c9d8-47ed-a9d9-a5ecdba395a6) | ![Demonstração do retorno de livros e autores cadastrados](https://github.com/sancappi/liter-alura/assets/149303714/7a145590-35ff-44f9-abc4-f8f4097444f4)
+|![Demonstração do retorno de livros por escolha de idioma e autores por ano](https://github.com/sancappi/liter-alura/assets/149303714/e68d4adb-c9d8-47ed-a9d9-a5ecdba395a6) | ![Demonstração do retorno de livros e autores cadastrados](https://github.com/sancappi/liter-alura/assets/149303714/52d84bce-7a6d-4345-a874-cd31856cc1cd)
 |:--------------------------------------------:|:--------------------------------------------:|
+
 
 
 
