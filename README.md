@@ -15,7 +15,7 @@
 
 ## ✅ Tecnologias utilizadas
   - Java 17
-  - InteliJ IDE
+  - IntelliJ IDEA
   - Spring Boot
   - Gutendex API
   - PostgreSQL
